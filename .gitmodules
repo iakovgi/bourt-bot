@@ -1,0 +1,9 @@
+[submodule "third_party/tgbot"]
+	path = third_party/tgbot
+	url = git@github.com:iakovgi/tgbot.git
+[submodule "third_party/primitives"]
+	path = third_party/primitives
+	url = git@github.com:egorpugin/primitives.git
+[submodule "third_party/TelegramBotAPI"]
+	path = third_party/TelegramBotAPI
+	url = git@github.com:iakovgi/TelegramBotAPI.git
