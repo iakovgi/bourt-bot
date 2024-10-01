@@ -84,14 +84,14 @@ void BourtBot::onPollAnswerReceived( qint32 updateId, tg::PollAnswer pollAnswer 
         return user.id == knownUser.id;
     } );
 
-    if ( pollAnswer.option_ids.empty() || pollAnswer.option_ids.front() == false ) {
+    if ( pollAnswer.option_ids.empty() || !!pollAnswer.option_ids.front() == false ) {
         if ( it != std::end( record ) )
             record.erase( it );
 
         return;
     }
 
-    if ( !pollAnswer.option_ids.empty() && pollAnswer.option_ids.front() == true ) {
+    if ( !pollAnswer.option_ids.empty() && !!pollAnswer.option_ids.front() == true ) {
         if ( it == std::end( record ) )
             record.push_back( user );
 
