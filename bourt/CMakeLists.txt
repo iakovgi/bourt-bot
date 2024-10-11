@@ -1,4 +1,4 @@
-add_executable( bourt )
+qt_add_executable( bourt )
 set_common_target_properties( bourt )
 
 target_include_directories( bourt
